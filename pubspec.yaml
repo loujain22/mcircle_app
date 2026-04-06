@@ -60,22 +60,21 @@ flutter:
 #---------------- LOCAL FONTS ---------------#
 
   fonts:
-   - family: Poppins
+   - family: Inter
      fonts:
-      - asset: assets/fonts/Poppins-Light.ttf
+      - asset: assets/fonts/Inter-Thin.otf
+        weight: 100
+      - asset: assets/fonts/Inter-Light.otf
         weight: 300
-      - asset: assets/fonts/Poppins-Regular.ttf
+      - asset: assets/fonts/Inter-Regular.otf
         weight: 400
-      - asset: assets/fonts/Poppins-Italic.ttf
-        style: italic
-      - asset: assets/fonts/Poppins-Medium.ttf
+      - asset: assets/fonts/Inter-Medium.otf
         weight: 500
-      - asset: assets/fonts/Poppins-MediumItalic.ttf
-        weight: 500
-        style: italic
-      - asset: assets/fonts/Poppins-SemiBold.ttf
+      - asset: assets/fonts/Inter-SemiBold.otf
         weight: 600
-      - asset: assets/fonts/Poppins-Bold.ttf
+      - asset: assets/fonts/Inter-Bold.otf
+        weight: 700
+      - asset: assets/fonts/Inter-ExtraBold.otf
         weight: 800
           
 

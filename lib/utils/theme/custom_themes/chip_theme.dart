@@ -4,19 +4,19 @@ class EChipTheme {
   EChipTheme._();
 
 // -- Light Theme --
-  static ChipThemeData lightChipTheme = ChipThemeData(
-    disabledColor: Colors.grey.withOpacity(0.4),
-    labelStyle: const TextStyle(color: Colors.black),
-    selectedColor: Colors.blue,
-    padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 12),
+  static ChipThemeData lightChipTheme = const ChipThemeData(
+    disabledColor: Colors.disabled,
+    labelStyle: TextStyle(color: Colors.black),
+    selectedColor: Colors.primary,
+    padding: EdgeInsets.symmetric(horizontal: 12.0, vertical: 12),
     checkmarkColor: Colors.white,
   );
 
 // -- Dark Theme
   static ChipThemeData darkChipTheme = const ChipThemeData(
-    disabledColor: Colors.grey,
+    disabledColor: Colors.disabled,
     labelStyle: TextStyle(color: Colors.black),
-    selectedColor: Colors.blue,
+    selectedColor: Colors.primary,
     padding: EdgeInsets.symmetric(horizontal: 12.0, vertical: 12),
     checkmarkColor: Colors.white,
   );
