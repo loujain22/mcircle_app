@@ -3,7 +3,6 @@ import 'package:mcircle_app/common/widgets/login_signup/form_divider.dart';
 import 'package:mcircle_app/common/widgets/login_signup/social_button.dart';
 import 'package:mcircle_app/features/authentication/screens/login/widget/login_form.dart';
 import 'package:mcircle_app/features/authentication/screens/login/widget/login_header.dart';
-import 'package:mcircle_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -22,13 +21,6 @@ class LoginScreen extends StatelessWidget {
 
           /// Form
           LoginForm(),
-
-          /// Divider
-          EFormDivider(dividerText: "or Sign In With"),
-          SizedBox(height: ESizes.spaceBtwSections),
-
-          ///Footer
-          SocialButton()
         ],
       ),
     )));

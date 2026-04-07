@@ -2,6 +2,7 @@
 class EImages {
   // -- App Logos
   static const String logo = "assets/logos/logo.png";
+  static const String roundedlogo = "assets/logos/rounded_logo.png";
 
   static const String darkAppLogo = "";
   static const String lightAppLogo = "";

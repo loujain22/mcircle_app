@@ -47,7 +47,10 @@ class ResendPassword extends StatelessWidget {
                   child: TextButton(
                       onPressed: () {},
                       child: const TextWithPrimaryColorWidget(
-                          text: "Resend Email")))
+                        text: "Resend Email",
+                        fontSize: 14,
+                        underline: false,
+                      )))
             ],
           ),
         ),

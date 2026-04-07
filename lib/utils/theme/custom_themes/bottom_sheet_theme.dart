@@ -9,7 +9,7 @@ class EBottomSheetTheme {
       backgroundColor: Colors.white,
       modalBackgroundColor: Colors.white,
       constraints: const BoxConstraints(minWidth: double.infinity),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)));
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)));
 
   // -- Dark Theme --
   static BottomSheetThemeData darkBottmSheetTheme = BottomSheetThemeData(
@@ -17,5 +17,5 @@ class EBottomSheetTheme {
       backgroundColor: Colors.black,
       modalBackgroundColor: Colors.black,
       constraints: const BoxConstraints(minWidth: double.infinity),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)));
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)));
 }
