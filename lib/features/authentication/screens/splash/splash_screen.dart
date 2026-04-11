@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:mcircle_app/features/shop/screens/home/home.dart';
+import 'package:mcircle_app/features/authentication/screens/onboarding/onboarding.dart';
 import 'package:mcircle_app/utils/helpers/helper_functions.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -35,7 +35,7 @@ class SplashScreen extends StatelessWidget {
           ],
         ),
       ),
-      nextScreen: const HomeScreen(),
+      nextScreen: const OnBoardingScreen(),
       duration: 3500,
       // backgroundColor: dark ? EColors.black : EColors.white,
       splashIconSize: double.infinity,

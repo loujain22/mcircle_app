@@ -1,5 +1,3 @@
-import 'package:get_storage/get_storage.dart';
-
 class EValidator {
   static String? validateEmail(String? value) {
     if (value == null || value.isEmpty) {

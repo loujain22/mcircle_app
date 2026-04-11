@@ -18,4 +18,20 @@ class EImages {
       "assets/images/onboarding_images/onboarding2.png";
   static const String onBoardingImage3 =
       "assets/images/onboarding_images/onboarding3.png";
+
+  // Onboarding Screens background Images
+  static const String onBoardingBgImage1 =
+      "assets/images/onboarding_images/onboardingBg1.png";
+  static const String onBoardingBgImage2 =
+      "assets/images/onboarding_images/onboardingBg2.png";
+  static const String onBoardingBgImage3 =
+      "assets/images/onboarding_images/onboardingBg3.png";
+
+  // Onboarding Screens dark background Images
+  static const String onBoardingDarkBgImage1 =
+      "assets/images/onboarding_images/onboardingDarkBg1.png";
+  static const String onBoardingDarkBgImage2 =
+      "assets/images/onboarding_images/onboardingDarkBg2.png";
+  static const String onBoardingDarkBgImage3 =
+      "assets/images/onboarding_images/onboardingDarkBg3.png";
 }

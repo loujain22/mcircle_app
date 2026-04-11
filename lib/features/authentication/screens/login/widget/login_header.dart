@@ -2,6 +2,7 @@ import 'package:mcircle_app/utils/constants/colors.dart';
 import 'package:mcircle_app/utils/constants/image_strings.dart';
 import 'package:mcircle_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:mcircle_app/utils/helpers/helper_functions.dart';
 
 class ELoginHeader extends StatelessWidget {
   const ELoginHeader({
@@ -10,10 +11,12 @@ class ELoginHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double? eHperFunction = EHelperFunctions.screenHeight() * 0.127;
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        const SizedBox(height: 127),
+        SizedBox(height: eHperFunction),
         Column(
           children: [
             const Image(height: 100, image: AssetImage(EImages.roundedlogo)),
