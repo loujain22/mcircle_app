@@ -1,5 +1,6 @@
 import 'package:mcircle_app/common/styles/text_with_Primary_color.dart';
-import 'package:mcircle_app/features/authentication/screens/password_configuration/forget_password.dart';
+import 'package:mcircle_app/features/authentication/screens/login/widget/rememberme_and_forgotpassword.dart';
+import 'package:mcircle_app/features/authentication/screens/signup/signup.dart';
 import 'package:mcircle_app/features/shop/screens/home/home.dart';
 import 'package:mcircle_app/utils/constants/colors.dart';
 //import 'package:mcircle_app/navigation_menu.dart';
@@ -33,35 +34,7 @@ class LoginForm extends StatelessWidget {
           const SizedBox(height: ESizes.spaceBtwItems),
 
           /// Remember Me & Forget Password
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              /// Remember Me
-              Row(
-                children: [
-                  Transform.scale(
-                    scale: 1.3, // كبّري أو صغّري الرقم
-                    child: Checkbox(
-                      value: true,
-                      onChanged: (value) {},
-                    ),
-                  ),
-                  Text("Remember me",
-                      style: Theme.of(context).textTheme.bodyLarge),
-                ],
-              ),
-
-              /// Forget Password
-              TextButton(
-                  onPressed: () => Get.to(() => const ForgetPassword()),
-                  child: const TextWithPrimaryColorWidget(
-                    text: "Forget password?",
-                    fontSize: 14,
-                    underline: true,
-                  ))
-            ],
-          ),
+          const RemembermeAndForgotPassword(),
 
           const SizedBox(height: ESizes.spaceBtwSections),
 
@@ -83,7 +56,7 @@ class LoginForm extends StatelessWidget {
                 style: TextStyle(fontSize: 12),
               ),
               TextButton(
-                  onPressed: () => Get.to(() => const ForgetPassword()),
+                  onPressed: () => Get.to(() => const SignupScreen()),
                   style: TextButton.styleFrom(
                     padding: const EdgeInsets.symmetric(
                         horizontal: 4), // يشيل المسافة الافتراضية

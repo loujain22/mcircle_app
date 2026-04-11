@@ -15,26 +15,40 @@ class TermsAndConditionCheckbox extends StatelessWidget {
         SizedBox(
           width: 24,
           height: 24,
-          child: Checkbox(value: true, onChanged: (value) {}),
+          child: Transform.scale(
+            scale: 1.3, // كبّري أو صغّري الرقم
+            child: Checkbox(
+              value: true,
+              onChanged: (value) {},
+            ),
+          ),
         ),
         const SizedBox(width: ESizes.spaceBtwItems),
         Text.rich(TextSpan(children: [
           TextSpan(
               text: "I agree to ",
-              style: Theme.of(context).textTheme.bodySmall),
+              style: Theme.of(context)
+                  .textTheme
+                  .bodySmall!
+                  .apply(color: dark ? EColors.white : EColors.textSecondary)),
           TextSpan(
               text: "Privacy Policy ",
               style: Theme.of(context).textTheme.bodyMedium!.apply(
-                  color: dark ? EColors.white : EColors.primary,
+                  color: EColors.primary,
                   decoration: TextDecoration.underline,
-                  decorationColor: dark ? EColors.white : EColors.primary)),
-          TextSpan(text: "and ", style: Theme.of(context).textTheme.bodySmall),
+                  decorationColor: EColors.primary)),
+          TextSpan(
+              text: "and ",
+              style: Theme.of(context)
+                  .textTheme
+                  .bodySmall!
+                  .apply(color: dark ? EColors.white : EColors.textSecondary)),
           TextSpan(
               text: "Terms of use ",
               style: Theme.of(context).textTheme.bodyMedium!.apply(
-                  color: dark ? EColors.white : EColors.primary,
+                  color: EColors.primary,
                   decoration: TextDecoration.underline,
-                  decorationColor: dark ? EColors.white : EColors.primary)),
+                  decorationColor: EColors.primary)),
         ]))
       ],
     );

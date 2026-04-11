@@ -1,3 +1,4 @@
+import 'package:mcircle_app/features/authentication/screens/signup/widgets/profile_image_picker.dart';
 import 'package:mcircle_app/features/authentication/screens/signup/widgets/signup_form.dart';
 import 'package:mcircle_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
@@ -20,9 +21,12 @@ class SignupScreen extends StatelessWidget {
                   style: Theme.of(context).textTheme.headlineMedium),
               const SizedBox(height: ESizes.spaceBtwSections),
 
+              const ProfileImagePicker(),
+
+              const SizedBox(height: ESizes.spaceBtwSections),
+
               /// Form
               const SignupForm(),
-              const SizedBox(height: ESizes.spaceBtwSections),
             ],
           ),
         ),

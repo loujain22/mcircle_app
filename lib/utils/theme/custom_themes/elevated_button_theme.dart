@@ -14,7 +14,7 @@ class EElevatedButtonTheme {
           side: const BorderSide(color: Colors.primary),
           padding: const EdgeInsets.symmetric(vertical: 18),
           textStyle: const TextStyle(
-              fontSize: 18, color: Colors.white, fontWeight: FontWeight.w600),
+              fontSize: 16, color: Colors.white, fontWeight: FontWeight.w400),
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(32))));
 
@@ -29,7 +29,7 @@ class EElevatedButtonTheme {
           side: const BorderSide(color: Colors.primary),
           padding: const EdgeInsets.symmetric(vertical: 18),
           textStyle: const TextStyle(
-              fontSize: 18, color: Colors.white, fontWeight: FontWeight.w600),
+              fontSize: 16, color: Colors.white, fontWeight: FontWeight.w600),
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(32))));
 }
