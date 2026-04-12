@@ -1,4 +1,4 @@
-import 'package:mcircle_app/features/authentication/screens/splash/splash_screen.dart';
+import 'package:mcircle_app/features/authentication/screens/otp/otp.dart';
 import 'package:mcircle_app/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -11,10 +11,10 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'mcircle_app',
+        title: 'Mcircle',
         themeMode: ThemeMode.system,
         theme: EAppTheme.lightTheme,
         darkTheme: EAppTheme.darkTheme,
-        home: const SplashScreen());
+        home: const OTPScreen());
   }
 }

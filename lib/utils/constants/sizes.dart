@@ -16,6 +16,7 @@ class ESizes {
   static const double fontSizeSm = 14.0;
   static const double fontSizeMd = 16.0;
   static const double fontSizeLg = 18.0;
+  static const double fontSizeXLg = 24.0;
 
   // Button sizes
   static const double buttonHeight = 18.0;
@@ -66,4 +67,18 @@ class ESizes {
 
   // Grid view spacing
   static const double gridViewSpacing = 16.0;
+
+  // Space System
+  static const double s4 = 4.0;
+  static const double s8 = 8.0;
+  static const double s12 = 12.0;
+  static const double s16 = 16.0;
+  static const double s20 = 20.0;
+  static const double s24 = 24.0;
+  static const double s28 = 28.0;
+  static const double s32 = 32.0;
+  static const double s40 = 40.0;
+  static const double s48 = 48.0;
+  static const double s56 = 56.0;
+  static const double s64 = 64.0;
 }
