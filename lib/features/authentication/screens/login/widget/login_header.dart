@@ -19,7 +19,7 @@ class ELoginHeader extends StatelessWidget {
         SizedBox(height: eHperFunction),
         Column(
           children: [
-            const Image(height: 100, image: AssetImage(EImages.roundedlogo)),
+            const Image(height: 100, image: AssetImage(EImages.clogo)),
             const SizedBox(height: ESizes.defaultSpace),
             Text("Welcome back",
                 style: Theme.of(context).textTheme.headlineMedium),

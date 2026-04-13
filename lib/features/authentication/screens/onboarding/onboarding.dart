@@ -2,7 +2,6 @@ import 'package:mcircle_app/features/authentication/controllers/onboarding/onboa
 import 'package:mcircle_app/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
 import 'package:mcircle_app/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
 import 'package:mcircle_app/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
-import 'package:mcircle_app/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
 import 'package:mcircle_app/utils/constants/image_strings.dart';
 import 'package:mcircle_app/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';

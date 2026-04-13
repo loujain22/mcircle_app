@@ -5,7 +5,6 @@ import 'package:mcircle_app/features/authentication/screens/otp/widgets/otp_fiel
 import 'package:mcircle_app/features/authentication/screens/otp/widgets/receiveotp_resendcode.dart';
 import 'package:mcircle_app/features/authentication/screens/otp/widgets/verify_email_texts.dart';
 import 'package:mcircle_app/features/shop/screens/home/home.dart';
-import 'package:mcircle_app/utils/constants/colors.dart';
 import 'package:mcircle_app/utils/constants/sizes.dart';
 
 class OTPScreen extends StatefulWidget {

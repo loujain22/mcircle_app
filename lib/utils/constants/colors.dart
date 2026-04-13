@@ -19,6 +19,8 @@ class EColors {
     ],
   );
 
+  static const Color primary25 = Color(0xFFFEEFEB);
+
   // Text Colors
   static const Color textPrimary = Color(0xFF333333);
   static const Color textSecondary = Color(0xFF6C737F);
@@ -60,4 +62,7 @@ class EColors {
 
   // Border Colors
   static const Color lightBorderGrey = Color(0xFFD2D6DB);
+
+  // Neutral Colors
+  static const Color neutral100 = Color.fromARGB(255, 240, 241, 242);
 }
