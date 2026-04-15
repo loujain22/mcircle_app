@@ -4,9 +4,8 @@ import 'package:mcircle_app/utils/constants/colors.dart';
 import 'package:mcircle_app/utils/constants/sizes.dart';
 
 class HomeSearch extends StatelessWidget {
-  const HomeSearch({
-    super.key,
-  });
+  final Color themeColor;
+  const HomeSearch({super.key, required this.themeColor});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +20,7 @@ class HomeSearch extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.all(ESizes.s12),
               decoration: BoxDecoration(
-                color: EColors.primary,
+                color: themeColor,
                 borderRadius: BorderRadius.circular(ESizes.s12),
               ),
               child: const Icon(
@@ -73,7 +72,7 @@ class HomeSearch extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.all(ESizes.s12),
               decoration: BoxDecoration(
-                color: EColors.primary,
+                color: themeColor,
                 borderRadius: BorderRadius.circular(ESizes.s12),
               ),
               child: const Icon(Iconsax.setting_4_copy,

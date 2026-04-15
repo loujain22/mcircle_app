@@ -4,9 +4,9 @@ import 'package:mcircle_app/utils/constants/colors.dart';
 import 'package:mcircle_app/utils/constants/sizes.dart';
 
 class HomeHeaderTop extends StatelessWidget {
-  const HomeHeaderTop({
-    super.key,
-  });
+  final Color themeColor; //
+
+  const HomeHeaderTop({super.key, required this.themeColor});
 
   @override
   Widget build(BuildContext context) {
@@ -27,29 +27,28 @@ class HomeHeaderTop extends StatelessWidget {
 
         const Spacer(),
 
-        const Column(
+        Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(
+            const Text(
               "Location",
               style: TextStyle(
                   fontSize: ESizes.fontSizeSm, color: EColors.textSecondary),
             ),
-            SizedBox(height: 2),
+            const SizedBox(height: 2),
             Row(
               children: [
-                Icon(Icons.location_on,
-                    size: ESizes.iconMd, color: Color(0xFFF0502C)),
-                SizedBox(width: ESizes.s4),
-                Text(
+                Icon(Icons.location_on, size: ESizes.iconMd, color: themeColor),
+                const SizedBox(width: ESizes.s4),
+                const Text(
                   "Riyad, Saudi Arabia",
                   style: TextStyle(
                       fontWeight: FontWeight.w600,
                       fontSize: ESizes.fontSizeMd,
                       color: EColors.dark),
                 ),
-                SizedBox(width: ESizes.s4),
-                Icon(
+                const SizedBox(width: ESizes.s4),
+                const Icon(
                   Iconsax.arrow_down_1_copy,
                   size: ESizes.iconSM,
                   color: EColors.dark,

@@ -11,18 +11,20 @@ class NavigationMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     final controller = Get.put(NavigationController());
     final darkMode = EHelperFunctions.isDarkMode(context);
+
     return Scaffold(
       bottomNavigationBar: Obx(
         () => NavigationBarTheme(
           data: NavigationBarThemeData(
             iconTheme: WidgetStateProperty.resolveWith((states) {
               if (states.contains(WidgetState.selected)) {
-                return const IconThemeData(color: EColors.primary);
+                return IconThemeData(color: controller.currentThemeColor.value);
               }
               return const IconThemeData(color: Colors.grey);
             }),
             //   indicatorShape: const CircleBorder(),
-            indicatorColor: EColors.primary25,
+            indicatorColor:
+                controller.currentThemeColor.value.withOpacity(0.15),
           ),
           child: NavigationBar(
               height: 80,
@@ -51,6 +53,9 @@ class NavigationMenu extends StatelessWidget {
 
 class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
+
+  final Rx<Color> currentThemeColor = const Color(0xFFF15934).obs;
+
   final screens = [
     const HomeScreen(),
     // const Store(),

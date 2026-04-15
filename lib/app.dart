@@ -1,4 +1,4 @@
-import 'package:mcircle_app/features/shop/screens/ads/ads.dart';
+import 'package:mcircle_app/navigation_menu.dart';
 import 'package:mcircle_app/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -15,6 +15,6 @@ class App extends StatelessWidget {
         themeMode: ThemeMode.system,
         theme: EAppTheme.lightTheme,
         darkTheme: EAppTheme.darkTheme,
-        home: const AdsScreen());
+        home: const NavigationMenu());
   }
 }

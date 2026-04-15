@@ -26,6 +26,7 @@ class EColors {
   static const Color textSecondary = Color(0xFF6C737F);
   static const Color textWhite = Colors.white;
   static const Color textPlaceholder = Color(0xFF9DA4AE);
+  static const Color textTabs = Color(0xFF8D4E33);
 
   // Background Colors
   static const Color light = Color(0xFFF6F6F6);
@@ -65,4 +66,13 @@ class EColors {
 
   // Neutral Colors
   static const Color neutral100 = Color.fromARGB(255, 240, 241, 242);
+
+  // Tab Colors
+  static const Color adsTabActive = Color(0xFFF0502C);
+  static const Color auctionTabActive = Color(0xFFD92D20);
+  static const Color socialTabActive = Color(0xFF33AEE2);
+
+  static const Color adsTabUnselected = Color(0xFF8B220A);
+  static const Color auctionTabUnselected = Color(0xFF7A271A);
+  static const Color socialTabUnselected = Color(0xFF102A56);
 }
