@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
 import 'package:mcircle_app/features/shop/screens/home/widgets/home_header.dart';
-import 'package:mcircle_app/features/shop/screens/home/widgets/product_card.dart';
+import 'package:mcircle_app/common/widgets/product_card/product_card.dart';
 import 'package:mcircle_app/features/shop/screens/home/widgets/tabs/custom_pill_tabbar.dart';
 import 'package:mcircle_app/features/shop/screens/home/widgets/tabs/pages/ads.dart';
 import 'package:mcircle_app/features/shop/screens/home/widgets/tabs/pages/auction.dart';
