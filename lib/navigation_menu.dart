@@ -1,4 +1,7 @@
+import 'package:mcircle_app/features/shop/screens/for_you/for_you.dart';
 import 'package:mcircle_app/features/shop/screens/home/home.dart';
+import 'package:mcircle_app/features/shop/screens/messages/messages.dart';
+import 'package:mcircle_app/features/shop/screens/trending/trending.dart';
 import 'package:mcircle_app/utils/constants/colors.dart';
 import 'package:mcircle_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -36,13 +39,11 @@ class NavigationMenu extends StatelessWidget {
               destinations: const [
                 NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
                 NavigationDestination(
-                    icon: Icon(Iconsax.message), label: 'Message'),
+                    icon: Icon(Iconsax.message), label: 'Messages'),
                 NavigationDestination(
-                    icon: Icon(Iconsax.document_upload), label: 'Post'),
+                    icon: Icon(Icons.local_fire_department), label: 'Trending'),
                 NavigationDestination(
-                    icon: Icon(Iconsax.box), label: 'Services'),
-                NavigationDestination(
-                    icon: Icon(Iconsax.user), label: 'Profile'),
+                    icon: Icon(Iconsax.setting_5), label: 'For You'),
               ]),
         ),
       ),
@@ -58,8 +59,8 @@ class NavigationController extends GetxController {
 
   final screens = [
     const HomeScreen(),
-    // const Store(),
-    // const FavouriteScreen(),
-    // const SettingsScreen()
+    const MessagesScreen(),
+    const TrendingScreen(),
+    const ForYouScreen()
   ];
 }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
+import 'package:mcircle_app/utils/constants/colors.dart';
+import 'package:mcircle_app/utils/constants/sizes.dart';
 
 class ProductCard extends StatefulWidget {
   final Color themeColor;
@@ -16,6 +18,7 @@ class _ProductCardState extends State<ProductCard> {
   Widget build(BuildContext context) {
     return Container(
       width: 180,
+      height: 240,
       clipBehavior: Clip.antiAlias, // لضمان قص الحواف بشكل ناعم
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
@@ -75,9 +78,19 @@ class _ProductCardState extends State<ProductCard> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Text(
-                          "Current Bid: 0",
-                          style: TextStyle(color: Colors.white70, fontSize: 11),
+                        Row(
+                          children: [
+                            Icon(Icons.location_on,
+                                color: widget.themeColor, size: 14),
+                            const SizedBox(width: 4),
+                            const Text(
+                              "ar-Riyad",
+                              style: TextStyle(
+                                color: EColors.white,
+                                fontSize: 11,
+                              ),
+                            ),
+                          ],
                         ),
                         Row(
                           children: [
@@ -91,7 +104,7 @@ class _ProductCardState extends State<ProductCard> {
                             ),
                             const SizedBox(width: 2),
                             const Text(
-                              "30000",
+                              "30.000",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 15,
@@ -103,17 +116,38 @@ class _ProductCardState extends State<ProductCard> {
                       ],
                     ),
                     const SizedBox(height: 8),
-                    Row(
+                    const Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Icon(Icons.location_on,
-                            color: widget.themeColor, size: 14),
-                        const SizedBox(width: 4),
-                        Text(
-                          "ar-Riyad",
-                          style: TextStyle(
-                            color: Colors.white.withOpacity(0.8),
-                            fontSize: 11,
-                          ),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.gavel_rounded, // أيقونة المطرقة
+                              color: Color(0xFFF15934), // لونك البرتقالي
+                              size: 18,
+                            ),
+                            SizedBox(width: 4),
+                            Text(
+                              "0",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Icon(Icons.people_alt_rounded,
+                                color: Color(0xFFF15934), size: ESizes.s16),
+                            SizedBox(width: ESizes.s4),
+                            Text(
+                              "10", // مثال لعدد المزايدين
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 12),
+                            ),
+                          ],
                         ),
                       ],
                     ),

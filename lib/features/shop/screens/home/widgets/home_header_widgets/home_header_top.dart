@@ -12,7 +12,6 @@ class HomeHeaderTop extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        // 1. صورة المستخدم دائرية
         Container(
           width: 60,
           height: 60,
@@ -24,9 +23,7 @@ class HomeHeaderTop extends StatelessWidget {
             ),
           ),
         ),
-
         const Spacer(),
-
         Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -57,10 +54,7 @@ class HomeHeaderTop extends StatelessWidget {
             ),
           ],
         ),
-
-        const Spacer(), // لدفع الجرس لليمين تماماً
-
-        // 3. أيقونة التنبيهات بخلفية رمادية
+        const Spacer(),
         Container(
           width: 48,
           height: 48,
@@ -68,8 +62,8 @@ class HomeHeaderTop extends StatelessWidget {
             shape: BoxShape.circle,
             color: Color(0xFFF5F5F5),
           ),
-          child: const Icon(Iconsax.notification,
-              color: EColors.black, size: ESizes.iconMd),
+          child:
+              const Icon(Icons.add, color: EColors.black, size: ESizes.iconMd),
         ),
       ],
     );
