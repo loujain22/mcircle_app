@@ -50,8 +50,6 @@ class HomeSearch extends StatelessWidget {
                 fillColor: EColors.neutral100,
                 contentPadding: const EdgeInsets.symmetric(vertical: 0),
                 border: InputBorder.none,
-
-                // لضمان عدم ظهور حدود عند الضغط على الحقل (Focus)
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                   borderSide: BorderSide.none,

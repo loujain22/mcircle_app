@@ -10,12 +10,12 @@ class AdsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<String> productImages = [
-      'assets/car1.jpg',
-      'assets/car2.jpg',
-      'assets/car3.jpg',
-      'assets/car4.jpg',
-      'assets/car1.jpg',
-      'assets/car2.jpg',
+      'assets/products_card/car1.jpg',
+      'assets/products_card/car2.jpg',
+      'assets/products_card/car3.jpg',
+      'assets/products_card/car4.jpg',
+      'assets/products_card/car1.jpg',
+      'assets/products_card/car2.jpg',
     ];
 
     return Padding(

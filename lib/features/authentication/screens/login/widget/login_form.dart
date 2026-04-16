@@ -58,8 +58,7 @@ class LoginForm extends StatelessWidget {
               TextButton(
                   onPressed: () => Get.to(() => const SignupScreen()),
                   style: TextButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 4), // يشيل المسافة الافتراضية
+                    padding: const EdgeInsets.symmetric(horizontal: 4),
                   ),
                   child: const TextWithPrimaryColorWidget(
                     text: "Create Account",

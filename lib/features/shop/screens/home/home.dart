@@ -4,9 +4,9 @@ import 'package:get/get.dart';
 import 'package:mcircle_app/features/shop/screens/home/widgets/home_header.dart';
 import 'package:mcircle_app/common/widgets/product_card/product_card.dart';
 import 'package:mcircle_app/features/shop/screens/home/widgets/tabs/custom_pill_tabbar.dart';
-import 'package:mcircle_app/features/shop/screens/home/widgets/tabs/pages/ads.dart';
-import 'package:mcircle_app/features/shop/screens/home/widgets/tabs/pages/auction.dart';
-import 'package:mcircle_app/features/shop/screens/home/widgets/tabs/pages/social.dart';
+import 'package:mcircle_app/features/shop/screens/home/widgets/tabs/pages/ads_tab.dart';
+import 'package:mcircle_app/features/shop/screens/home/widgets/tabs/pages/auction_tab.dart';
+import 'package:mcircle_app/features/shop/screens/home/widgets/tabs/pages/social_tab.dart';
 import 'package:mcircle_app/navigation_menu.dart';
 import 'package:mcircle_app/utils/constants/colors.dart';
 
