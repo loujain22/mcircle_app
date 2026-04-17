@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
 import 'package:mcircle_app/features/shop/screens/home/widgets/home_header.dart';
-import 'package:mcircle_app/common/widgets/product_card/product_card.dart';
 import 'package:mcircle_app/features/shop/screens/home/widgets/tabs/custom_pill_tabbar.dart';
 import 'package:mcircle_app/features/shop/screens/home/widgets/tabs/pages/ads_tab.dart';
 import 'package:mcircle_app/features/shop/screens/home/widgets/tabs/pages/auction_tab.dart';
 import 'package:mcircle_app/features/shop/screens/home/widgets/tabs/pages/social_tab.dart';
 import 'package:mcircle_app/navigation_menu.dart';
 import 'package:mcircle_app/utils/constants/colors.dart';
+import 'package:mcircle_app/utils/constants/sizes.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -96,7 +95,7 @@ class _HomeScreenState extends State<HomeScreen>
               unSelectedColor: UnselectedContentTab,
             ),
 
-            const SizedBox(height: 10),
+            const SizedBox(height: ESizes.s12),
 
             Expanded(
               child: TabBarView(

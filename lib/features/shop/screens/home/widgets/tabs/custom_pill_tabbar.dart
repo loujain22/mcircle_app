@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
-import 'package:mcircle_app/utils/constants/colors.dart';
 import 'package:mcircle_app/utils/constants/sizes.dart';
 import 'pill_tab_item.dart';
 
@@ -22,12 +21,19 @@ class CustomPillTabBar extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(
           horizontal: ESizes.s16, vertical: ESizes.s12),
-      padding: const EdgeInsets.symmetric(vertical: ESizes.s4),
+      //  padding: const EdgeInsets.symmetric(vertical: ESizes.s4),
+      padding: EdgeInsets.zero,
       decoration: BoxDecoration(
         color: backgroundColor,
         borderRadius: BorderRadius.circular(50),
       ),
       child: TabBar(
+        // الـ indicator هو اللون الغامق الذي سيتحرك
+        indicatorSize: TabBarIndicatorSize.tab,
+        indicator: BoxDecoration(
+          color: activeColor,
+          borderRadius: BorderRadius.circular(50),
+        ),
         controller: controller,
         indicatorColor: Colors.transparent,
         dividerColor: Colors.transparent,

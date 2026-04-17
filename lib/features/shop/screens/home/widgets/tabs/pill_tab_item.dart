@@ -21,33 +21,24 @@ class PillTabItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Tab(
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 200),
-        padding:
-            const EdgeInsets.symmetric(horizontal: ESizes.s20, vertical: 10),
-        decoration: BoxDecoration(
-          color: isSelected ? selectedColor : Colors.transparent,
-          borderRadius: BorderRadius.circular(25),
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Icon(
-              icon,
-              size: 18,
-              color: isSelected ? EColors.white : unSelectedContent,
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(
+            icon,
+            size: 18,
+            color: isSelected ? EColors.white : unSelectedContent,
+          ),
+          const SizedBox(width: ESizes.s8),
+          Text(
+            label,
+            style: TextStyle(
+              fontSize: 14,
+              fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
+              color: isSelected ? Colors.white : unSelectedContent,
             ),
-            const SizedBox(width: ESizes.s8),
-            Text(
-              label,
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
-                color: isSelected ? Colors.white : unSelectedContent,
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

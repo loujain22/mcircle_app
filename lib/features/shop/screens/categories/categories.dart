@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mcircle_app/common/widgets/appbar/circular_back_button.dart';
+import 'package:mcircle_app/common/widgets/search_widget/search_widget.dart';
 import 'package:mcircle_app/features/shop/screens/categories/widgets/category_grid.dart';
-import 'package:mcircle_app/features/shop/screens/categories/widgets/category_search.dart';
 import 'package:mcircle_app/utils/constants/colors.dart';
 import 'package:mcircle_app/utils/constants/sizes.dart';
 
@@ -32,7 +32,7 @@ class CategoriesScreen extends StatelessWidget {
           children: [
             SizedBox(height: ESizes.s12),
             // Search Bar with Filter
-            CategorySearch(themeColor: themeColor),
+            SearchWidget(themeColor: themeColor),
             SizedBox(height: ESizes.s32),
             // Grid of Categories
             CategoryGrid(themeColor: themeColor),
