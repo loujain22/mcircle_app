@@ -4,14 +4,14 @@ import 'package:image_picker/image_picker.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:mcircle_app/utils/constants/colors.dart';
 
-class ProfileImagePicker extends StatefulWidget {
-  const ProfileImagePicker({super.key});
+class EImagePicker extends StatefulWidget {
+  const EImagePicker({super.key});
 
   @override
-  State<ProfileImagePicker> createState() => _ProfileImagePickerState();
+  State<EImagePicker> createState() => _EImagePickerState();
 }
 
-class _ProfileImagePickerState extends State<ProfileImagePicker> {
+class _EImagePickerState extends State<EImagePicker> {
   File? _image;
   final ImagePicker _picker = ImagePicker();
 

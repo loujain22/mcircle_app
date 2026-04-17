@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
+import 'package:mcircle_app/features/shop/screens/categories/categories.dart';
 import 'package:mcircle_app/utils/constants/colors.dart';
 import 'package:mcircle_app/utils/constants/sizes.dart';
 
@@ -15,7 +17,7 @@ class HomeSearch extends StatelessWidget {
         children: [
           // -- Categories Button
           InkWell(
-            onTap: () {},
+            onTap: () => Get.to(() => const CategoriesScreen()),
             borderRadius: BorderRadius.circular(ESizes.s12),
             child: Container(
               padding: const EdgeInsets.all(ESizes.s12),
@@ -33,7 +35,7 @@ class HomeSearch extends StatelessWidget {
 
           const SizedBox(width: ESizes.s8),
 
-          // حقل البحث
+          // Search TextField
           Expanded(
             child: TextFormField(
               decoration: InputDecoration(
@@ -64,7 +66,7 @@ class HomeSearch extends StatelessWidget {
 
           const SizedBox(width: ESizes.s8),
 
-          // زر الفلتر (Settings)
+          // Filter Button
           InkWell(
             onTap: () {},
             child: Container(

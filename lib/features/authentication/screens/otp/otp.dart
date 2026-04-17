@@ -34,7 +34,7 @@ class _OTPScreenState extends State<OTPScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent, // أو أي لون تفضلينه
+        backgroundColor: Colors.transparent,
         elevation: 0,
         leadingWidth: 70,
         leading: const Center(

@@ -33,7 +33,7 @@ class CircularBackButton extends StatelessWidget {
         icon: Icon(
           Icons.arrow_back,
           color: dark ? EColors.white : EColors.black,
-          size: size * 0.5, // حجم الأيقونة يتناسب مع حجم الدائرة
+          size: size * 0.5,
         ),
         onPressed: onPressed ?? () => Navigator.pop(context),
       ),
