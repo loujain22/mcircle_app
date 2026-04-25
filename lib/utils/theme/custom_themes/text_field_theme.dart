@@ -10,8 +10,9 @@ class ETextFieldTheme {
     prefixIconColor: Colors.grey,
     suffixIconColor: Colors.grey,
     // constraints: const BoxConstraints.expand(height: 14.inputFieldHeight),
-    labelStyle: const TextStyle().copyWith(fontSize: 14, color: EColors.black),
-    hintStyle: const TextStyle().copyWith(fontSize: 14, color: EColors.black),
+    labelStyle:
+        const TextStyle().copyWith(fontSize: 14, color: EColors.textSecondary),
+    hintStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.grey),
     errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
     floatingLabelStyle:
         const TextStyle().copyWith(color: Colors.black.withOpacity(0.8)),

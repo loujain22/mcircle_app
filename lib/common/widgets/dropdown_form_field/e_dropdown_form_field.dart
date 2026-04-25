@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
+import 'package:mcircle_app/utils/constants/colors.dart';
 
 class EDropdown extends StatelessWidget {
   final String label;
@@ -45,7 +46,7 @@ class EDropdown extends StatelessWidget {
       dropdownColor: isDark ? const Color(0xFF1F1F1F) : Colors.white,
       iconEnabledColor: Colors.grey,
       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-            color: isDark ? Colors.white : Colors.black,
+            color: isDark ? Colors.white : EColors.textSecondary,
             fontSize: 14,
           ),
       borderRadius: BorderRadius.circular(14),
