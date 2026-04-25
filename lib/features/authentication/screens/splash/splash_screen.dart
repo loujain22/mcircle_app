@@ -19,17 +19,14 @@ class SplashScreen extends StatelessWidget {
               "assets/images/bg.png",
               fit: BoxFit.cover,
             ),
-
-            // overlay اختياري
             Container(
               color: Colors.black.withOpacity(0.2),
             ),
-
             Center(
               child: Image.asset(
                 "assets/logos/logo.png",
-                width: 200,
-                height: 200,
+                width: 180,
+                height: 180,
               ),
             ),
           ],

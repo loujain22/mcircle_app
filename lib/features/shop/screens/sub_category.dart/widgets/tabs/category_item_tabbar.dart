@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mcircle_app/utils/constants/sizes.dart';
 
 class CategoryTabItem extends StatelessWidget {
   final String label;
@@ -14,8 +15,8 @@ class CategoryTabItem extends StatelessWidget {
           Text(
             label,
             style: const TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w500,
+              fontSize: ESizes.s16,
+              fontWeight: FontWeight.w600,
             ),
           ),
         ],

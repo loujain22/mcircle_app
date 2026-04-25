@@ -33,7 +33,7 @@ class ProductLocationAndPrice extends StatelessWidget {
         Row(
           children: [
             Text(
-              "ريال",
+              "ر.س",
               style: TextStyle(
                 color: themeColor,
                 fontSize: 12,

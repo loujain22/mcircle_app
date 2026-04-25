@@ -28,7 +28,7 @@ class CategoryTabBar extends StatelessWidget {
         ),
         labelColor: Colors.white,
         unselectedLabelColor: unselectedColor,
-        dividerColor: Colors.transparent, // لإزالة الخط السفلي الافتراضي
+        dividerColor: Colors.transparent,
         labelPadding: const EdgeInsets.symmetric(vertical: 2),
         tabs: const [
           CategoryTabItem(label: "All"),

@@ -76,6 +76,7 @@ class SignupForm extends StatelessWidget {
               child: EDropdown(
                 label: "Country",
                 items: const ["Egypt", "Saudi Arabia", "Sudan"],
+                prefixIcon: Iconsax.global,
                 onChanged: (value) {},
               ),
             ),
@@ -87,6 +88,7 @@ class SignupForm extends StatelessWidget {
               child: EDropdown(
                 label: "City",
                 items: const ["Cairo", "Alexandria", "Riyadh", "Khartoum"],
+                prefixIcon: Iconsax.global,
                 onChanged: (value) {},
               ),
             ),

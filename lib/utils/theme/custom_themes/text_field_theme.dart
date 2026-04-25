@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mcircle_app/utils/constants/colors.dart';
 
 class ETextFieldTheme {
   ETextFieldTheme._();
@@ -9,18 +10,18 @@ class ETextFieldTheme {
     prefixIconColor: Colors.grey,
     suffixIconColor: Colors.grey,
     // constraints: const BoxConstraints.expand(height: 14.inputFieldHeight),
-    labelStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
-    hintStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
+    labelStyle: const TextStyle().copyWith(fontSize: 14, color: EColors.black),
+    hintStyle: const TextStyle().copyWith(fontSize: 14, color: EColors.black),
     errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
     floatingLabelStyle:
         const TextStyle().copyWith(color: Colors.black.withOpacity(0.8)),
     border: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(width: 1, color: Colors.grey),
+      borderSide: BorderSide(width: 1, color: Colors.grey[300]!),
     ),
     enabledBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(width: 1, color: Colors.grey),
+      borderSide: BorderSide(width: 1, color: Colors.grey[300]!),
     ),
     focusedBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),

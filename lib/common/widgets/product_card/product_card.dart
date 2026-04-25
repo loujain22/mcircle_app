@@ -55,8 +55,8 @@ class _ProductCardState extends State<ProductCard> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     // Product Title
-                    const ProductTitle(),
-                    const SizedBox(height: ESizes.s4),
+                    // const ProductTitle(),
+                    // const SizedBox(height: ESizes.s4),
                     ProductLocationAndPrice(themeColor: widget.themeColor),
                     const SizedBox(height: ESizes.s4),
 

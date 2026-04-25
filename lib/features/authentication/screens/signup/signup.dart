@@ -1,3 +1,4 @@
+import 'package:mcircle_app/common/widgets/appbar/circular_back_button.dart';
 import 'package:mcircle_app/features/authentication/screens/signup/widgets/image_picker.dart';
 import 'package:mcircle_app/features/authentication/screens/signup/widgets/signup_form.dart';
 import 'package:mcircle_app/utils/constants/sizes.dart';
@@ -9,7 +10,11 @@ class SignupScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        leading: const Center(
+          child: CircularBackButton(),
+        ),
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(ESizes.defaultSpace),

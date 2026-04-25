@@ -28,7 +28,6 @@ class CustomPillTabBar extends StatelessWidget {
         borderRadius: BorderRadius.circular(50),
       ),
       child: TabBar(
-        // الـ indicator هو اللون الغامق الذي سيتحرك
         indicatorSize: TabBarIndicatorSize.tab,
         indicator: BoxDecoration(
           color: activeColor,

@@ -2,6 +2,7 @@ import 'package:mcircle_app/common/styles/text_with_Primary_color.dart';
 import 'package:mcircle_app/features/authentication/screens/login/widget/rememberme_and_forgotpassword.dart';
 import 'package:mcircle_app/features/authentication/screens/signup/signup.dart';
 import 'package:mcircle_app/features/shop/screens/home/home.dart';
+import 'package:mcircle_app/navigation_menu.dart';
 import 'package:mcircle_app/utils/constants/colors.dart';
 //import 'package:mcircle_app/navigation_menu.dart';
 import 'package:mcircle_app/utils/constants/sizes.dart';
@@ -42,7 +43,7 @@ class LoginForm extends StatelessWidget {
           SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                  onPressed: () => Get.to(() => const HomeScreen()),
+                  onPressed: () => Get.to(() => const NavigationMenu()),
                   child: const Text("Sign In"))),
 
           const SizedBox(height: ESizes.xs),
